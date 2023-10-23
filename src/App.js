@@ -36,9 +36,9 @@ function App() {
     const newTodos = [...todos];
     const todoIndex = newTodos.findIndex((todo) => todo.text === text );
     newTodos.splice(todoIndex, 1);
-    console.log(todoIndex, newTodos)
-    // setTodos(newTodos);
+    setTodos(newTodos);
   }
+
   
   return (
     <>
