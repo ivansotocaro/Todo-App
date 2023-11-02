@@ -9,7 +9,7 @@ function TodoItem({ text, completed, onComplete, onDelete }) {
     <p className={`TodoItem-p ${completed && "TodoItem-p--complete"}`}>
       {text}
     </p>
-      <DeleteIcon  onDelete={onDelete}/>
+      <DeleteIcon onDelete={onDelete}/>
   </li>
   );
 }

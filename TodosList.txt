@@ -1,0 +1,10 @@
+const defaultTodos = [
+  { text: 'Cortar cebolla', completed: true },
+  { text: 'Cortar ctomate', completed: false },
+  { text: 'Cortar ajo', completed: false },
+  { text: 'Cortar Carne', completed: false },
+  { text: 'superPoll', completed: true },
+];
+
+localStorage.setItem('TODO_V1', JSON.stringify(defaultTodos));
+localStorage.removeItem('TODO_V1');

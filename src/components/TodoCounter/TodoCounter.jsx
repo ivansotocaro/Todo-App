@@ -4,11 +4,11 @@ const styleExcelent = {
   color: "green"
 }
 
-function  TodoCounter({ total, completed }) {
+function TodoCounter({ total, completed }) {
     return (
       <h1 className="TodoCounter">
         {
-          (completed === total) ? (
+          (completed === total && total != 0) ? (
             <p style={styleExcelent}>
               <span> Felicitaciones, completaste todas las tareas</span>
             </p>
@@ -17,7 +17,7 @@ function  TodoCounter({ total, completed }) {
               <span> {completed} </span>
                de 
               <span> {total} </span> 
-               TODOs
+               TODOS
             </p>
           )
         }
